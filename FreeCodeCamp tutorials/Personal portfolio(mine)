@@ -1,0 +1,294 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link ref="stylesheet" href="styles.css">
+   <script src="https://kit.fontawesome.com/69b0451d9c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <header>
+        <navbar id="navbar">
+  <ul>
+  <li><a href="#welcome-section">About</a></li>
+  <li><a href="#projects">Work</a></li>
+  <li><a href="#contact-me">Contact</a></li>
+</ul> 
+        </navbar>
+      </header>
+      <section id="welcome-section">
+<h1>Hey, I am Kim</h1>
+<p>A software developer</p>
+<!-- <p>A web developer</p>
+<p>A mobile developer</p> -->
+      </section>
+      <section id="projects">
+ <h1>These are some of my projects</h1> 
+ <div class="project-tiles">
+   <div class="project-tile">
+     <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="group of men" class="project-image">     
+    <div class="image-description"><p>Tribute page</p></div>
+   </div>
+   </a>
+
+      <div class="project-tile">
+        <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="random quote" class="project-image">     
+    <div class="image-description"><p>Random quote machine</p></div>
+    </a>
+   </div>
+
+     <div class="project-tile">
+       <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="calc" class="project-image">     
+    <div class="image-description"><p>Js Calc</p></div>
+</a>
+   </div>
+     <div class="project-tile">
+       <a href="https://codepen.io/freeCodeCamp/full/mVEJag">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="map" class="project-image">     
+    <div class="image-description"><p>Map</p></div>
+    </a>
+   </div>
+
+     <div class="project-tile">
+       <a href="https://codepen.io/freeCodeCamp/full/wGqEga">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="wikipedia" class="project-image">     
+    <div class="image-description"><p>Wikipedia viewer</p></div>
+    </a>
+   </div>
+     <div class="project-tile">
+       <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
+     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="Tic tac toe game" class="project-image">     
+    <div class="image-description"><p>Tic tac toe game</p></div>
+    </a>
+   </div>
+   <a href="https://codepen.io/FreeCodeCamp/">
+   <button id="projects-button"><p>Show all
+          <i class="fa-solid fa-chevron-right"></i></p> 
+     </button>
+     </a>
+   </div> 
+      </section>
+      <section id="contact-me">
+<h1>
+Let's work together...
+</h1>
+<p>How do you take your coffee?</p>
+<ul>
+  <li><a href="https://www.facebook.com/freecodecamp"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+  <li><a  id="profile-link" href="https://github.com/freecodecamp" target='_blank'> <i class="fa-brands fa-github"></i>Github</a></li>
+  <li><a href="https://twitter.com/freecodecamp"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+  <li><a><i class="fa-solid fa-at"></i>Send a mail</a></li>
+  <li><a><i class="fa-solid fa-mobile"></i>Call me</a></li>
+</ul>
+</section>
+<div class="footer">
+  <p>**This is just a fake portfolio. All the projects and contact details given are not real. </p>
+  <p>© Created for freeCodeCamp </p>
+</div>
+      </body>
+</html>  
+
+
+*******************css***************************
+body{
+  margin:0;
+  padding:0;
+}
+header,#navbar{
+  width:100%;
+  height:70px;
+  /* height:20%;   */
+background-color:#BE3644;
+display:flex;
+justify-content:end;
+align-items:center;
+position:fixed;
+top:0;
+}
+
+#welcome-section{  background-color:black;
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+#projects{ background-color:#45567D; width:100%;
+height:auto;
+}
+
+ul{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+/* li{
+  float:right;
+} */
+
+/* li a{
+  display:block;
+   color: white;
+  text-align: center;
+  padding: 16px 16px;  text-decoration: none;
+} */
+
+li{
+  display:inline;
+}
+
+li a{
+color: white;
+text-align:center;
+   padding:10px; 
+  /* margin-left:5px; */    text-decoration: none;
+}
+#welcome-section  h1{
+   color:white;
+   margin-bottom:1px;
+ }
+
+#welcome-section p{ color:#BE3644;   font-style:italic;
+ }
+ #projects{   margin-top:-20px;
+}
+/* .project-tile{   margin-top:-20px;
+ } */
+#projects h1{
+color:white;
+text-decoration:underline;
+text-align:center;
+padding-top:40px;
+ }
+
+ .project-tiles{
+   display:flex;
+justify-content:center;
+  flex-wrap:wrap;
+  margin: 5px;
+   /* width:100px; */
+ }
+
+ .project-tile{
+/* width:400px;
+height:450px; */
+flex-basis:25%;
+padding:23px;
+/* border-radius:20px; */
+ }
+ .project-image{
+    width:400px;
+    height:390px;
+    border-radius:2px 2px 0px 0px;
+ }
+ .image-description{
+   width:400px;
+   height:50px;
+background-color:#303841;
+text-align:center;
+margin-top:-20px;
+   border-radius:0px 0px 2px 2px;
+ }
+.image-description p{
+ color:white; padding-top:12px;
+}
+
+#projects-button{
+background-color:#303841;
+  color:white;
+ width:110px;
+ height:50px;
+ border:none;
+margin-bottom:30px;
+border-radius:2%;
+}
+
+#projects-button{ word-spacing:5px;
+cursor:pointer;
+}
+#contact-me{
+  width:100%;
+  height:auto;
+background-color:rgb(48,56,65);
+margin-top:-20px;
+padding-bottom:40px;
+border-bottom:3px solid #BE3644;
+}
+#contact-me ,h1,p,ul{
+  color:white;
+  text-align:center;
+}
+#contact-me h1{
+  padding-top:30px;
+}
+#contact-me > p{
+  padding-top:1px;
+  font-style:italic;
+}
+#contact-me ul{
+  padding-top:15px;
+}
+#contact-me > ul li{
+  /* font-style:italic; */
+  padding-left:15px;
+}
+
+.footer{
+  width:100%;
+  height:70px;
+  background-color:rgb(48,56,65);
+  /* margin-top:-5px; */
+  text-align:center;
+  padding-top:40px;
+  /* padding:40px; */
+}
+.footer p{
+  display:inline;
+}
+.footer > :first-child{
+padding-right:50px;
+/* padding-left:5p; */
+}
+.project-tile a{
+text-decoration:none;
+}
+
+/* @media (max-width: 480px){
+   header,#navbar{
+  width:100%;
+  height:70px;
+  /* height:20%;   */
+/* background-color:blue;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+} */ 
+
+@media (max-width: 510px){
+  body{
+    /* width:50%; */
+  min-width:440px;
+  }
+   header,#navbar{
+  width:100%;
+  height:70px;
+  /* height:20%;   */
+background-color:green;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+}
+
+
+
+
+
